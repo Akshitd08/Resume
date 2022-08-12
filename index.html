@@ -1,155 +1,228 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Dennis Ivy</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
-    <body>
-        <div id="container--main">
 
-            <section id="wrapper--hero" class="section--page">
-                <img id="profile-pic" src="./assets/images/profile_pic.JPG">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akshit Dhiman Resume</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+    <style>
+        .DIV-onscroll {
+            
+            opacity: 0;
+            transition: opacity 500ms;
+        }
 
-                <div>
-                    <h1 id="user-name">Akshit Dhiman</h1>
-                    <h2>About Me</h2>
-                    <p id="bio">Akshit Dhiman</p>
-                    <p id="bio">Hno. 378 Kalyan Nagar Jagadhri, Yamunanagar, 135003</p>
-                    <p id="bio">7206266777</p>
-                    <p id="bio"><a href="#">akshitd08@gmail.com</a></p>
-                    
-                </div>  
-            </section>
+        .scrolled.slide-right {
+            animation: slide-in-right 1s ease-in-out both;
+        }
 
-            <section class="section--page">
-        
-                <div id="socials--list">
-                    <a href="https://twitter.com/dennisivy11" target="_blank">Facebook</a>
-                    <a href="https://www.linkedin.com/in/dennis-ivanov/" target="_blank">Linkedin</a>
-                    <a href="https://github.com/divanov11" target="_blank">Github</a>
-                    <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
-                    <a href="https://youtube.com/c/dennisivy" target="_blank">Instagram</a>
-                </div>
-            </section>
-            <p>Full-Stack Developer, persuing B.tech, Proagraming Skills - Web Deveplopment, C++ proagraming language and problem solving. Currently brushing up my skills in WebDev.</p>
+        @keyframes slide-in-right {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
 
-            <section class="section--page">
-                <h2>Education</h2>
-                <ul id="qualifications--list">
-                    <li>
-                        <h3>Bachelors Degree</h2>
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container--main">
+
+        <section id="wrapper--hero" class="section--page">
+            <img id="profile-pic" src="./assets/images/profile_pic.JPG">
+
+            <div>
+                <h1 id="user-name">Akshit Dhiman</h1>
+                <h2>About Me</h2>
+                <p id="bio">Akshit Dhiman</p>
+                <p id="bio">Hno. 378 Kalyan Nagar Jagadhri, Yamunanagar, 135003</p>
+                <p id="bio">7206266777</p>
+                <p id="bio"><a href="#">akshitd08@gmail.com</a></p>
+
+            </div>
+        </section>
+
+
+        <section class="section--page">
+
+            <div id="socials--list">
+                <a href="https://twitter.com/dennisivy11" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/in/dennis-ivanov/" target="_blank">Linkedin</a>
+                <a href="https://github.com/divanov11" target="_blank">Github</a>
+                <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
+                <a href="https://youtube.com/c/dennisivy" target="_blank">Instagram</a>
+            </div>
+        </section>
+        <p>Full-Stack Developer, persuing B.tech, Proagraming Skills - Web Deveplopment, C++ proagraming language and
+            problem solving. Currently brushing up my skills in WebDev.</p>
+
+        <section class="section--page">
+            <h2>Education</h2>
+            <ul id="qualifications--list">
+                <li>
+                    <h3>Bachelors Degree</h2>
                         <p>Chandigarh Group of Collages 2019-2023</p>
                         <p>Btech Computer Science</p>
-                    </li>
-                    <li>
-                        <h3>10+2</h2>
+                </li>
+                <li>
+                    <h3>10+2</h2>
                         <p style="font-weight: bold;">S.D Public School 2019</p>
-                        
-                    </li>
-                    <li>
-                        <h3>Matric</h2>
+
+                </li>
+                <li>
+                    <h3>Matric</h2>
                         <p style="font-weight: bold;">S.D Public School 2017</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="DIV-onscroll slide-right"></div>
+        <div class="DIV-onscroll slide-right"></div>
+        <div class="DIV-onscroll slide-right"></div>
+        
+
+        <section class="section--page">
+            <h2 class="DIV-onscroll slide-right">Tech stack</h2>
+
+            <div id="wrapper--techstack__items">
+                <div class="card--techstack"><span>HTML, CSS, JavaScript</span></div>
+                <div class="card--techstack"><span>Node JS</span></div>
+                <div class="card--techstack"><span>Express</span></div>
+                <div class="card--techstack"><span>Bootstrap</span></div>
+                <div class="card--techstack"><span>React JS</span></div>
+                <div class="card--techstack"><span>C/C++</span></div>
+                <div class="card--techstack"><span>MySQL</span></div>
+                <div class="card--techstack"><span>MongoDB</span></div>
+            </div>
+        </section>
+
+        <section id="work-history-wrapper" class="section--page">
+            <h2 class="DIV-onscroll slide-right">Work</h2>
+
+            <div class="line-break"></div>
+            <div class="card--work-history">
+                <strong>🚧 Goal Setter App</strong>
+                <p>05/2022</p>
+                <p>Tech Used - MERN Stack - Rest API, MongoDB</p>
+                <ul>
+                    <li>The proposed project helps in creating a list of everything that you have to do on
+                        daily basis and serves as a reminder for what you need to accomplish.</li>
+                    <li>This software provides an authentication check, by using JWT. Assigning a
+                        unique key to every user.</li>
+                </ul>
+            </div>
+
+
+            <div class="line-break"></div>
+
+            <div class="card--work-history">
+                <strong>🚧 Billing System</strong>
+                <p>2/2022</p>
+                <p>Environment and Tech Used - Window 10, VS Code/Turbo C++, Language - C++</p>
+                <ul>
+                    <li>It can automatically generate the bill into our system and notify us about the due
+                        dates.</li>
+                    <li>Users may opt for an auto-debit or alternatively, choose to make manual payments,
+                        throughout that very application.
                     </li>
                 </ul>
-            </section>
+            </div>
+        </section>
 
-            <section class="section--page">
-                <h2>Tech stack</h2>
+        <section class="section--page">
+            <h2 class="DIV-onscroll slide-right">Projects & Accomplishments</h2>
 
-                <div id="wrapper--techstack__items">
-                    <div class="card--techstack"><span>HTML, CSS, JavaScript</span></div>
-                    <div class="card--techstack"><span>Node JS</span></div>
-                    <div class="card--techstack"><span>Express</span></div>
-                    <div class="card--techstack"><span>Bootstrap</span></div>
-                    <div class="card--techstack"><span>React JS</span></div>
-                    <div class="card--techstack"><span>C/C++</span></div>
-                    <div class="card--techstack"><span>MySQL</span></div>
-                    <div class="card--techstack"><span>MongoDB</span></div>
-                </div>
-            </section>
+            <div class="card--project">
+                <a href=""><span>🏆 </span>Built a Weather Forcasting Application using APIs</a>
+            </div>
 
-            <section id="work-history-wrapper" class="section--page">
-                <h2>Work</h2>
+            <div class="card--project">
+                <a href=""><span>🏆 </span>Build a To-Do List using MERN stack and different technologies</a>
+            </div>
 
-                <div class="line-break"></div>
-                <div class="card--work-history">
-                    <strong>🚧 Goal Setter App</strong>
-                    <p>05/2022</p>
-                    <p>Tech Used - MERN Stack - Rest API, MongoDB</p>
-                    <ul>
-                        <li>The proposed project helps in creating a list of everything that you have to do on 
-                            daily basis and serves as a reminder for what you need to accomplish.</li>
-                        <li>This software provides an authentication check, by using JWT. Assigning a 
-                            unique key to every user.</li>
-                    </ul>
-                </div>
+            <div class="card--project">
+                <a href=""><span>🏆 </span>Social Network - open source project</a>
+            </div>
 
-                
-                <div class="line-break"></div>
+            <div class="card--project">
+                <a href=""><span>🏆 </span>Good at Fine Arts</a>
+            </div>
 
-                <div class="card--work-history">
-                    <strong>🚧 Billing System</strong>
-                    <p>2/2022</p>
-                    <p>Environment and Tech Used - Window 10, VS Code/Turbo C++, Language - C++</p>
-                    <ul>
-                        <li>It can automatically generate the bill into our system and notify us about the due 
-                            dates.</li>
-                        <li>Users may opt for an auto-debit or alternatively, choose to make manual payments, 
-                            throughout that very application.
-                            </li>
-                    </ul>
-                </div>
-            </section>
+        </section>
 
-            <section class="section--page">
-                <h2>Projects & Accomplishments</h2>
+        <section class="section--page">
+            <h2 class="DIV-onscroll slide-right">Contact</h2>
 
-                <div class="card--project">
-                    <a href=""><span>🏆 </span>Built a Weather Forcasting Application using APIs</a>
+            <form>
+                <div class="name">
+                    <input type="text" placeholder="Name">
                 </div>
 
-                <div class="card--project">
-                    <a href="" ><span>🏆 </span>Build a To-Do List using MERN stack and different technologies</a>
+                <div class="email">
+                    <input type="text" placeholder="Email">
                 </div>
 
-                <div class="card--project">
-                    <a href=""><span>🏆 </span>Social Network - open source project</a>
+                <div class="subject">
+                    <input type="text" placeholder="Subject">
                 </div>
+                <button class="submitbtn">Send Message</button>
+            </form>
 
-                <div class="card--project">
-                    <a href=""><span>🏆 </span>Good at Fine Arts</a>
-                </div>
+        </section>
 
-            </section>
+        <section class="section--page">
+            <footer>© 2022 All Rights Reserved.</footer>
+        </section>
+    </div>
+    <script>
 
-            <section class="section--page">
-                <h2>Contact</h2>
+        const scrollElements = document.querySelectorAll(".DIV-onscroll");
+        const elementInView = (el) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (
+                elementTop <= (document.documentElement.clientHeight)
+            );
+        };
 
-                <form>
-                    <div class="name">
-                        <input type="text" placeholder="Name">
-                    </div>
-                    
-                    <div class="email">
-                        <input type="text" placeholder="Email">
-                    </div>
-                
-                    <div class="subject">
-                        <input type="text" placeholder="Subject">
-                    </div>
-                    <button class="submitbtn">Send Message</button>
-                </form>
+        const elementOutofView = (el) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (
+                elementTop > (document.documentElement.clientHeight)
+            );
+        };
 
-            </section>
+        const displayScrollElement = (element) => {
+            element.classList.add("scrolled");
+        };
 
-            <section class="section--page">
-                <footer>© 2022 All Rights Reserved.</footer>
-            </section>
-        </div>
+        const hideScrollElement = (element) => {
+            element.classList.remove("scrolled");
+        };
 
-    </body>
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el)) {
+                    displayScrollElement(el);
+                } else if (elementOutofView(el)) {
+                    hideScrollElement(el)
+                }
+            })
+        }
+
+        window.addEventListener("scroll", () => {
+            handleScrollAnimation();
+        });
+
+    </script>
+
+</body>
+
 </html>
