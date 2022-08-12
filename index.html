@@ -8,29 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/main.css">
-    <style>
-        .DIV-onscroll {
-            
-            opacity: 0;
-            transition: opacity 500ms;
-        }
-
-        .scrolled.slide-right {
-            animation: slide-in-right 1s ease-in-out both;
-        }
-
-        @keyframes slide-in-right {
-            0% {
-                transform: translateY(100px);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateY(0px);
-                opacity: 1;
-            }
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -98,11 +76,11 @@
             </div>
         </section>
 
-        <section id="work-history-wrapper" class="section--page">
+         <section id="work-history-wrapper" class="section--page">
             <h2 class="DIV-onscroll slide-right">Work</h2>
 
             <div class="line-break"></div>
-            <div class="card--work-history">
+            <div class="card--work-history DIV-onscroll slide-work-right">
                 <strong>🚧 Goal Setter App</strong>
                 <p>05/2022</p>
                 <p>Tech Used - MERN Stack - Rest API, MongoDB</p>
@@ -117,7 +95,7 @@
 
             <div class="line-break"></div>
 
-            <div class="card--work-history">
+            <div class="card--work-history DIV-onscroll slide-work-left">
                 <strong>🚧 Billing System</strong>
                 <p>2/2022</p>
                 <p>Environment and Tech Used - Window 10, VS Code/Turbo C++, Language - C++</p>
