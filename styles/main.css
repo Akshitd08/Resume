@@ -270,3 +270,71 @@ form {
         opacity: 1;
     }
 }
+
+
+/*projects and accomplishment*/
+
+.scrolled.slide-right1 {
+    animation: slide-in-right1 1s ease-in-out both;
+}
+
+@keyframes slide-in-right1 {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.scrolled.slide-right2 {
+    animation: slide-in-right2 1.3s ease-in-out both;
+}
+
+@keyframes slide-in-right2 {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.scrolled.slide-right3 {
+    animation: slide-in-right3 1.6s ease-in-out both;
+}
+
+@keyframes slide-in-right3 {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.scrolled.slide-right4 {
+    animation: slide-in-right4 1.8s ease-in-out both;
+}
+
+@keyframes slide-in-right4 {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
