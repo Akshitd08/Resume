@@ -1,43 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dennis Ivy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Akshit Dhiman Resume</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/main.css">
-    <style>
-        .DIV-onscroll {
-            
-            opacity: 0;
-            transition: opacity 500ms;
-        }
-
-        .scrolled.slide-right {
-            animation: slide-in-right 1s ease-in-out both;
-        }
-
-        @keyframes slide-in-right {
-            0% {
-                transform: translateY(100px);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateY(0px);
-                opacity: 1;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div id="container--main">
-
-        <section id="wrapper--hero" class="section--page">
-            <img id="profile-pic" src="./assets/images/profile_pic.JPG">
+            <section id="wrapper--hero" class="section--page">
+                <img id="profile-pic" src="./assets/images/profile_pic.JPG">
 
             <div>
                 <h1 id="user-name">Akshit Dhiman</h1>
@@ -178,51 +153,10 @@
 
         </section>
 
-        <section class="section--page">
-            <footer>© 2022 All Rights Reserved.</footer>
-        </section>
-    </div>
-    <script>
+            <section class="section--page">
+                <footer>© 2022 All Rights Reserved.</footer>
+            </section>
+        </div>
 
-        const scrollElements = document.querySelectorAll(".DIV-onscroll");
-        const elementInView = (el) => {
-            const elementTop = el.getBoundingClientRect().top;
-            return (
-                elementTop <= (document.documentElement.clientHeight)
-            );
-        };
-
-        const elementOutofView = (el) => {
-            const elementTop = el.getBoundingClientRect().top;
-            return (
-                elementTop > (document.documentElement.clientHeight)
-            );
-        };
-
-        const displayScrollElement = (element) => {
-            element.classList.add("scrolled");
-        };
-
-        const hideScrollElement = (element) => {
-            element.classList.remove("scrolled");
-        };
-
-        const handleScrollAnimation = () => {
-            scrollElements.forEach((el) => {
-                if (elementInView(el)) {
-                    displayScrollElement(el);
-                } else if (elementOutofView(el)) {
-                    hideScrollElement(el)
-                }
-            })
-        }
-
-        window.addEventListener("scroll", () => {
-            handleScrollAnimation();
-        });
-
-    </script>
-
-</body>
-
+    </body>
 </html>
