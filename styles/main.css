@@ -215,3 +215,58 @@ form {
         padding-left: 0;
     }
 }
+
+.DIV-onscroll {
+            
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.scrolled.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.scrolled.slide-work-right {
+    animation: slide-in-work-right 2s ease-in-out both;
+}
+
+
+@keyframes slide-in-work-right {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.scrolled.slide-work-left {
+    animation: slide-in-work-left 1.5s ease-in-out both;
+}
+
+@keyframes slide-in-work-left {
+    0% {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
